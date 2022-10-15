@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+  </head>
+  <body>
+    <header class = "page-header">
+		<nav class = "navigation">
+		<ul class = "navigation-list navigation-user">
+				<li class = "navigation-item">
+					<a class = "navigation-link" href = "#">Поиск</a>
+				</li>
+				<li class = "navigation-item">
+					<a class = "navigation-link" href = "#">Найти</a>
+				</li>
+				<li class = "navigation-item">
+					<a class = "navigation-link" href = "#">Войти</a>
+				</li>
+				<li class = "navigation-item">
+					<a class = "navigation-link" href = "#">Сравнить</a>
+				</li>
+				<li class = "navigation-item">
+					<a class = "navigation-link" href = "#">Корзина</a>
+				</li>
+			</ul>
+			<ul class = "navigation-list">
+				<li class = "navigation-item">
+					<a class = "navigation-link" href = "#">Доставка</a>
+				</li>
+				<li class = "navigation-item">
+					<a class = "navigation-link" href = "#">Гарантия</a>
+				</li>
+				<li class = "navigation-item">
+					<a class = "navigation-link" href = "#">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+    <main class="main-inner">
+      <header class="inner-header">
+        <h1 class="inner-header-title">Каталог</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Каталог</a>
+          </li>
+        </ul>
+      </header>
+
+      <section class="catalog-products">
+        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Производители</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="hydroscan">
+				  Гидроскан
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="sasung" checked>
+				  Sasung
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="huevei" checked>
+				  Huevei
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="noikiya">
+				  Noikiya
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="elektronika">
+				  Електроника
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="somens" checked>
+				  Somens
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Группы товаров</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="virtual-reality">
+				  Виртуальная реальность
+                </label>
+              </li>
+			  <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="monopods">
+				  Моноподы для селфи
+                </label>
+              </li>
+			  <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="action-cameras">
+				  Экшн-камеры
+                </label>
+              </li>
+			  <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="fitnes-braclet">
+				  Фитнес-браслеты
+                </label>
+              </li>
+			  <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="smart-watches">
+				  Умные часы
+                </label>
+              </li>
+			  <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="quadrocopters">
+				  Квадракоптеры
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button class="button" type="submit">Показать</button>
+        </form>
+
+
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Сначала популярное</option>
+          <option value="cheap">Сначала дешёвое</option>
+          <option value="expensive">Сначала дорогое</option>
+        </select>
+        <a href="#" class="button button-light">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <ul class="product-list">
+          <li class="product-card">
+            <a class="product-card-link" href="product.html">
+              <img class="product-card-image" src="" alt="">
+              <h3 class="product-card-title">Квадрокоптер Гидроскан</h3>
+            </a>
+            <b class="product-card-price">744 ₽</b>
+            <a class="product-card-button button" href="#">Купить</a>
+          </li>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="" alt="">
+              <h3 class="product-card-title">Умные часы Huevei</h3>
+            </a>
+            <b class="product-card-price">160 ₽</b>
+            <a class="product-card-button button" href="#">Купить</a>
+          </li>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="" alt="">
+              <h3 class="product-card-title">Очки виртуальной реальности Sasung</h3>
+            </a>
+            <b class="product-card-price">94 ₽</b>
+            <a class="product-card-button button" href="#">Купить</a>
+          </li>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="" alt="">
+              <h3 class="product-card-title">Фитнес браслет Електроника</h3>
+            </a>
+            <b class="product-card-price">173 ₽</b>
+            <a class="product-card-button button" href="#">Купить</a>
+          </li>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="" alt="">
+              <h3 class="product-card-title">Экшн-камера Somens</h3>
+            </a>
+            <b class="product-card-price">441 ₽</b>
+            <a class="product-card-button button" href="#">Купить</a>
+          </li>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="" alt="">
+              <h3 class="product-card-title">Монопод для селфи Noikiya</h3>
+            </a>
+            <b class="product-card-price">904 ₽</b>
+            <a class="product-card-button button" href="#">Купить</a>
+          </li>
+        </ul>
+
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-prev pagination-disabled">
+              <span class="visually-hidden">Предыдущая страница</span>
+            </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">5</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-next" href="#">
+              <span class="visually-hidden">Следующая страница</span>
+            </a>
+          </li>
+        </ul>
+        <button class="button pagination-show-more" type="button">Показать ещё</button>
+      </section>
+    </main>
+
+    <footer class = "page-footer">
+		<section class="footer-contacts">
+			<h2>Контакты</h2>
+			<img class="footer-contacts-logo" src="" alt="Логотип Девайс.">
+			<address class="footer-contacts-address">
+				<p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+			</address>
+		</section>
+	
+		<section class="footer-info">
+			<h2>Информация</h2>
+			<table>
+				<tr>
+					<td>ДОСТАВКА</td>
+				</tr>
+				<tr>
+					<td>ГАРАНТИЯ</td>
+				</tr>
+				<tr>
+					<td>КОНТАКТЫ</td>
+				</tr>
+			</table>
+		</section>
+	
+		<section class="footer-telephone">
+			<h2>Телефон</h2>
+			<address class="footer-contacts-address">
+				<a class="footer-contacts-address-phone" href="tel:+78128121212"><i>+7(812)812-12-12</i></a>
+			</address>
+		</section>
+		<div class = "social-networks-buttons">
+			<img class = "facebook" src = "" alt = "Facebook">
+			<img class = "instagram" src = "" alt = "Instagram">
+			<img class = "twitter" src = "" alt = "Twitter">
+		</div>
+	</footer>
+  </body>
+</html>
