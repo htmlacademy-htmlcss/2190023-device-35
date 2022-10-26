@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
+	  <link rel="stylesheet" href="./styles/styles.css">
 	</head>
   <body>
 		<header class="page-header">
@@ -16,13 +17,13 @@
 				</form>
 				<ul class="navigation-list navigation-user">
 					<li class="navigation-item">
-						<button class="navigation-link">Войти</button>
+						<button class="account-link">Войти</button>
 					</li>
 					<li class="navigation-item">
-						<a class="navigation-link" href="#">Сравнить</a>
+						<a class="account-link" href="#">Сравнить</a>
 					</li>
 					<li class="navigation-item">
-						<a class="navigation-link" href="#">Корзина</a>
+						<a class="account-link" href="#">Корзина</a>
 					</li>
 				</ul>
 				<ul class="navigation-list">
@@ -74,13 +75,13 @@
 						<p class="device-detail-description">Этот обычный на первый взгляд, квадрокоптер оснащен мощным лязером, замаскированным под стандартную камеру.</p>
 						<a class="detailed" href="#">Подробнее</a>
 						<table class="abilities-table">
-							<tr class="abilities-header-1">
-								<td class="abilities-header-1">800 м</td>
-								<td class="abilities-header-2">50 м</td>
+							<tr class="abilities-header">
+								<td class="abilities-header">800 м</td>
+								<td class="abilities-header">50 м</td>
 							</tr>
 							<tr>
-								<td class="abilities-footer-1">Дальность полета</td>
-								<td class="abilities-footer-2">Радиус поражения</td>
+								<td class="abilities-footer">Дальность полета</td>
+								<td class="abilities-footer">Радиус поражения</td>
 							</tr>
 						</table>
 					</li>
@@ -90,11 +91,11 @@
 						<p class="device-detail-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 						<a class="detailed" href="#">Подробнее</a>
 						<table class="abilities-table">
-							<tr class="abilities-header-1">
-								<td class="abilities-header-1">48 часов</td>
+							<tr class="abilities-header">
+								<td class="abilities-header">48 часов</td>
 							</tr>
 							<tr>
-								<td class="abilities-footer-2">Без подзарядки</td>
+								<td class="abilities-footer">Без подзарядки</td>
 							</tr>
 						</table>
 					</li>
@@ -104,15 +105,15 @@
 						<p class="device-detail-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5кг.</p>
 						<a class="detailed" href="#">Подробнее</a>
 						<table class="abilities-table">
-							<tr class="abilities-header-1">
-								<td class="abilities-header-1">8,5 м</td>
-								<td class="abilities-header-2">5 кг</td>
-								<td class="abilities-header-3">Карбон</td>
+							<tr class="abilities-header">
+								<td class="abilities-header">8,5 м</td>
+								<td class="abilities-header">5 кг</td>
+								<td class="abilities-header">Карбон</td>
 							</tr>
 							<tr>
-								<td class="abilities-footer-1">Длина палки</td>
-								<td class="abilities-footer-2">Вес палки</td>
-								<td class="abilities-footer-3">Материал</td>
+								<td class="abilities-footer">Длина палки</td>
+								<td class="abilities-footer">Вес палки</td>
+								<td class="abilities-footer">Материал</td>
 							</tr>
 						</table>
 					</li>
@@ -171,18 +172,19 @@
 						<button class="client-info-choice-description-button">КРЕДИТ</button>
 					</div>
 					<h2>Доставка</h2>
-					<p class="client-info-detail-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, моднимая его на ваш этаж.</p>
+					<p class="client-info-detail-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 					<h2>Гарантия</h2>
 					<p class="client-info-detail-description">Если из=за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
 					<h2>Кредит</h2>
 					<p class="client-info-detail-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
 				</div>
-				<span class="rare-product">
-				<button class="rare-product-button">Доставим редкий товар под заказ</button>
-				</span>
+				<div class="rare-product">
+					<button class="rare-product-button">Машинка</button>
+					<p>Доставим редкий товар под заказ</p>
+				</div>
 			</section>
 			<section class="about-us">
-				<div class="delivery-invo">
+				<div class="delivery-info">
 					<h2>О нас</h2>
 					<p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 					<p class="about-us-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
@@ -191,7 +193,7 @@
 						<li class="delivery-item">СДИК</li>
 						<li class="delivery-item">ТоксБерри</li>
 					</ul>
-					<button class="about-us-button">ПОДРОБНЕЕ О НАС</button>
+					<button class="detailed">ПОДРОБНЕЕ О НАС</button>
 				</div>
 				<div class="contacts">
 					<h2>Контакты</h2>
@@ -199,11 +201,11 @@
 					<p class="about-us-text">Заодно сможете проверить работоспособность покупки.</p>
 					<h3 class="about-us-info-header">Интернет-магазин "Девайс"</h3>
 					<p class="about-us-text">Санкт-Петербург, набережная реки Карповки, 5 литера П.</p>
-					<a class="about-us-text" href="tel:+78128121212">+7(812)812-12-12</a>
+					<a class="about-us-text" href="tel:+78128121212">+7 (812) 812-12-12</a>
 					<h3 class="about-us-info-header">Время работы</h3>
 					<p class="about-us-text">пн-пт: с 10:00 до 22:00</p>
 					<p class="about-us-text">сб-вс: с 10:00 до 19:00</p>
-					<button class="about-us-button">НАПИШИТЕ НАМ</button>
+					<button class=" detailed">НАПИШИТЕ НАМ</button>
 				</div>
 			</section>
 			<section class="mailing">
@@ -211,7 +213,7 @@
 				<p class="mailing-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 				<form class="mainig-form" action="https://echo.htmlacademy.ru/" method="post">
 					<input type="email" id="mailing-email" name="mailing-email" placeholder="Ваш e-mail">
-					<button class="button" type="submit">ПОДПИСАТЬСЯ</button>
+					<button class="button-subscribe" type="submit">ПОДПИСАТЬСЯ</button>
 				</form>
 				<p class="mailing-text">Это бесплатно</p>
 			</section>
@@ -243,13 +245,13 @@
 			<section class="footer-telephone">
 				<h2>Телефон</h2>
 				<address class="footer-contacts-address">
-				<a class="footer-contacts-address-phone" href="tel:+78128121212">+7(812)812-12-12</a>
+				<a class="footer-contacts-address-phone" href="tel:+78128121212">Тел.: +7(812)812-12-12</a>
 			</address>
 		</section>
 		<div class="social-networks-buttons">
-			<a class="facebook" href="#">Facebook</a>
-			<a class="instagram" href="#">Instagram</a>
-			<a class="twitter" href="#">Twitter</a>
+			<a class="telegram" href="https://t.me/htmlacademy">Facebook</a>
+			<a class="youtube" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+			<a class="twitter" href="https://twitter.com/htmlacademy_ru">Twitter</a>
 		</div>
 		<a class="academy-logo" href="https://htmlacademy.ru/"><img class="academy-logo-image" src="images/logo-academy.svg" width="115" height="33" alt="HTML academy logo"></a>
 	</footer>
