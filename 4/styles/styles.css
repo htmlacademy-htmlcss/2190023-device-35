@@ -432,7 +432,6 @@ body
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
-  color: #000000;
 }
 .pagination-item
 {
@@ -456,4 +455,9 @@ body
 .pagination-disabled a
 {
   opacity: 0.3;
+}
+
+.pagination-next a
+{
+	color: #000000;
 }
