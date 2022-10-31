@@ -48,8 +48,6 @@ body {
 }
 
 .navigation {
-  display: flex;
-  flex-direction: column;
   width: 1160px;
   margin: 0 auto;
   color: #000000;
@@ -152,6 +150,10 @@ body {
   color: #444444;
 }
 
+.products {
+  margin-top: 70px;
+}
+
 .products-list {
   list-style-type: none;
   display: flex;
@@ -179,8 +181,14 @@ body {
   color: #000000;
   text-decoration: none;
 }
+.client-info-section {
+  background-color: #F0F0F0;
+  color: #000000;
+  margin-top: 70px;
+}
 
 .client-info {
+  background-color: #F0F0F0;
   display: flex;
 }
 
@@ -223,17 +231,26 @@ body {
 
 /*Доставим редкий товар под заказ*/
 .rare-product {
-  font-family: "Raleway", sans-serif;
-  color: #000000;
-  background-color: #F0F0F0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  display: flex;
+  /*  font-family: "Raleway", sans-serif;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  display: flex;*/
   height: 100px;
+  margin-top: 70px;
+}
+
+.rare-product-button{
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .rare-product h2 {
@@ -283,14 +300,16 @@ body {
 }
 
 .delivery-info {
-  height: 520px;
+  min-height: 520px;
   width: 500px; /*493px*/
+  margin-right: 108px;
 }
 
 .contacts {
-  height: 540px; /*532px*/
+  min-height: 540px; /*532px*/
   width: 550px;  /*545px*/
 }
+
 
 .delivery-item {
   font-family: "Rubik", sans-serif;
@@ -458,6 +477,11 @@ body {
   margin-right: 36px;
 }
 
+.catalog-section{
+  color: #000000;
+  background-color: #F0F0F0;
+}
+
 .catalog-products {
   background-color: #F0F0F0;
   display: flex;
@@ -517,8 +541,6 @@ body {
 
 /* товары */
 .catalog-right-column {
-  display: flex;
-  flex-direction: column;
   width: 840px;
   height: 70px;
   background: #FFFFFF;
