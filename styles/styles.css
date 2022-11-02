@@ -245,12 +245,40 @@ body {
   margin-top: 70px;
 }
 
+.rare-product-logo {
+  width: 125px;
+  height: 100px;
+  float: left;
+  background-color: #FFE17F;
+}
+
+.rare-button-logo {
+  margin: 35px 85px 34px 40px;
+}
+
+.rare-text {
+  width: 910px;
+  height: 20px;
+  
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  margin-top: 40px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 .rare-product-button{
   width: 100%;
   height: 100px;
   margin: 0;
   padding: 0;
   border: none;
+  display: flex;
 }
 
 .rare-product h2 {
