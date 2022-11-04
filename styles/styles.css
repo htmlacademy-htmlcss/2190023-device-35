@@ -259,7 +259,7 @@ body {
 .rare-text {
   width: 910px;
   height: 20px;
-  
+
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
@@ -486,8 +486,12 @@ body {
 
 .inner-header {
   width: 1079px;
-  height: 86px;
-  margin: 0 auto;
+  min-height: 86px;
+  margin: 35px auto 35px auto;
+}
+
+.inner-header-title {
+  margin-bottom: 16px;
 }
 
 .breadcrumbs {
@@ -518,7 +522,7 @@ body {
 
 .catalog-all-filters {
   width: 320px;
-  height: 1316px;
+  min-height: 1316px;
 }
 
 /* ФИЛЬТР СОРТИРОВКА*/
@@ -570,7 +574,7 @@ body {
 /* товары */
 .catalog-right-column {
   width: 840px;
-  height: 70px;
+  min-height: 1310px;
   background: #FFFFFF;
   color: #000000;
 }
@@ -623,7 +627,10 @@ body {
   text-transform: uppercase;
   background-color: #ffffff;
   color: #000000;
-  margin-top: 44px;
+  margin: 0 auto;
+  height: 55px;
+  width: 760px;
+  vertical-align: middle;
 }
 /* Пагинация вперед-назад*/
 .pagination {
@@ -631,11 +638,13 @@ body {
   background-color: #EBEBEB;
   text-transform: uppercase;
   list-style-type: none;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 760px;
   height: 71px;
-  margin-top: 44px;
+  margin: 44px auto 44px auto;
+  align-items: center;
 }
 
 .pagination-prev {
