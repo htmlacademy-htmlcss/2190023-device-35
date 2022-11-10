@@ -49,22 +49,51 @@ body {
   overflow: hidden;
 }
 
+/* --- header --- */
 .page-header {
   color: #000000;
+  background-color: #FFE17F;
+  width: 1160px;
+  min-height: 186px;
+  margin: 0 auto;
 }
 
-.page-footer {
-  color: #FFFFFF;
-  background-color: #444444;
-  min-height: 321px;
+.page-header-container {
+  color: #000000;
+  width: 1040px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 30px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-page-href {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
+.navigation-user-grid {
+  grid-column: 1 / -1;
+  justify-self: start;
+  display: grid;
+  grid-template-columns: 517px 231px 240px;
+  column-gap: 26px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .navigation {
-  width: 1160px;
-  margin: 0 auto;
-  color: #000000;
-  background-color: #FFE17F;
-  min-height: 186px;
+  grid-column: 1 / -1;
+  justify-self: space-between;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 293px 1fr;
+  column-gap: 276px;
+  align-items: center;
 }
 
 .header-yellow-rectangle {
@@ -73,25 +102,6 @@ body {
   color: #000000;
   background-color: #FFE17F;
   min-height: 114px;
-}
-
-.navigation-user-grid {
-  display: grid;
-  grid-template-columns: 517px 231px 1fr;
-  column-gap: 26px;
-  align-items: center;
-  padding-left: 60px;
-  padding-right: 60px;
-  margin-bottom: 30px;
-}
-
-.navigation-goods-grid {
-  display: grid;
-  grid-template-columns: 293px 1fr;
-  column-gap: 276px;
-  align-items: center;
-  padding-left: 60px;
-  padding-right: 60px;
 }
 
 .navigation-list {
@@ -202,14 +212,6 @@ body {
   margin-bottom: 70px;
 }
 
-.nav-logo {
-  margin-left: 60px;
-}
-
-/*
-.products-logo {
-}*/
-
 .products-yellow-list {
   display: grid;
   grid-template-columns: repeat(6, 160px);
@@ -255,17 +257,13 @@ body {
 }
 
 .client-info-description {
-  width: 290px;
-  /*287px;*/
-  min-height: 320px;
-  /*319px;*/
+  width: 290px;  /*287px;*/
+  min-height: 320px;  /*319px;*/
 }
 
 .client-info-detail {
-  width: 870px;
-  /*1160-290px;*/
-  height: 320px;
-  /*319px;*/
+  width: 870px;  /*1160-290px;*/
+  height: 320px;  /*319px;*/
 }
 
 .client-info h2 {
@@ -305,16 +303,6 @@ body {
 
 /*Доставим редкий товар под заказ*/
 .rare-product {
-  /*  font-family: "Raleway", sans-serif;
-    color: #000000;
-    background-color: #FFFFFF;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-  display: flex;*/
   height: 100px;
   margin-top: 70px;
 }
@@ -411,12 +399,9 @@ body {
 
 .delivery-info {
   min-height: 520px;
-  width: 500px;
-  /*493px*/
+  width: 500px;  /*493px*/
   margin-right: 108px;
   display: block;
-  /*grid-template-rows: 60px 60px 100px 140px 20px;
-	gap: 50px;*/
 }
 
 .delivery-list {
@@ -427,13 +412,9 @@ body {
 }
 
 .contacts {
-  min-height: 540px;
-  /*532px*/
-  width: 550px;
-  /*545px*/
+  min-height: 540px;  /*532px*/
+  width: 550px;       /*545px*/
   display: block;
-  /*grid-template-rows: 50px 30px 30px 30px 30px 30px 30px 30px 30px 20px;
-	gap: 20px*/
 }
 
 
@@ -512,6 +493,22 @@ body {
 }
 
 /*---footer---*/
+.page-footer {
+  color: #FFFFFF;
+  background-color: #444444;
+  min-height: 321px;
+}
+
+.page-footer-container {
+  width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 239px auto 175px;
+  grid-template-rows: auto auto auto;
+  padding-top: 61px;
+  padding-bottom: 61px;
+}
+
 .page-footer h2 {
   font-size: 12px;
   line-height: 21px;
@@ -527,8 +524,6 @@ body {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   justify-self: start;
-  /*align-self: center;*/
-  /*margin-bottom: 64px;*/
   margin-top: 35px;
 }
 
@@ -559,7 +554,6 @@ body {
   grid-row: 2 / 3;
   justify-self: end;
   align-self: center;
-  /*margin-bottom: 63px;*/
 }
 
 .footer-telephone-address-phone {
@@ -851,7 +845,6 @@ body {
 .product-card-descr {
   display: flex;
   justify-content: space-between;
-  /*margin-bottom: 44px;*/
 }
 
 .product-card-title {
@@ -904,7 +897,6 @@ body {
   justify-content: space-between;
   width: 760px;
   min-height: 71px;
-  /*margin: 44px auto 44px auto;*/
   margin: 0;
   padding: 0;
   align-items: center;
