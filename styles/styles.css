@@ -60,7 +60,7 @@ body {
 
 .page-header::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 1160px;
   height: 186px;
   background-color: #FFE17F;
@@ -73,7 +73,8 @@ body {
   color: #000000;
   width: 1040px;
   display: grid;
-  grid-template-rows: 44px auto auto; /*36+(2+2)*2=44*/
+  grid-template-rows: 44px auto auto;
+  /*36+(2+2)*2=44*/
   gap: 30px;
   margin-top: 20px;
   margin-left: auto;
@@ -120,7 +121,8 @@ body {
   grid-column: 1 / -1;
   justify-self: start;
   display: grid;
-  grid-template-columns: 517px 517px;
+  grid-template-columns: 517px 497px;
+  /* + 26 = 1040*/
   column-gap: 26px;
   align-items: center;
   padding: 0;
@@ -152,18 +154,23 @@ body {
   position: relative;
 }
 
-.navigation-corf::before {
+.navigation-corf-counter {
   position: absolute;
-  content: '2';
-  text-align: center;
+  background-color: #FFFFFF;
   color: #000000;
-  background-color: #ffffff;
-  border-radius: 50%;
-  border: none;
   width: 21px;
   height: 21px;
   bottom: 5px;
   left: -15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .navigation-user {
@@ -260,7 +267,7 @@ body {
   margin: 0;
 }
 
-.gallery .page-container{
+.gallery .page-container {
   position: relative;
   min-height: 560px;
 }
@@ -376,12 +383,12 @@ body {
   min-height: 560px;
   display: flex;
   justify-content: space-between;
-  position:relative
+  position: relative
 }
 
 .slider-pagination-group88::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 1160px;
   height: 300px;
   background-color: #FFE17F;
@@ -399,20 +406,20 @@ body {
   width: 560px;
   height: 400px;
   padding-top: 82px;
-  position:relative
+  position: relative
 }
 
 .slider-description::before {
   position: absolute;
-  content: '01';
+  content: "01";
   /* width: auto;
   height: auto; */
-  color:#ffffff;
+  color: #ffffff;
   background-color: transparent;
   top: 78px;
   right: 49px;
   z-index: -100;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 180px;
@@ -420,15 +427,15 @@ body {
 }
 
 .slider-pagination-item:nth-child(1) .slider-description::before {
-  content: '01';
+  content: "01";
 }
 
 .slider-pagination-item:nth-child(2) .slider-description::before {
-  content: '02';
+  content: "02";
 }
 
 .slider-pagination-item:nth-child(3) .slider-description::before {
-  content: '03';
+  content: "03";
 }
 
 
@@ -456,19 +463,26 @@ body {
   text-decoration: none;
   color: inherit;
   position: relative;
-  width: 220px; /*fit-content; */
+  width: 220px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .detailed-about-us {
-  width: 258px;
+  width: 270px;
+}
+
+.detailed-write-to-us {
+  width: 260px;;
 }
 
 .detailed-link {
   color: inherit;
   text-decoration: none;
   display: block;
-  width: fit-content; /*210px;*/
+  width: fit-content;  /*210px;*/
   margin: 0 auto;
   height: 20px;
   padding: 10px 5px;
@@ -479,8 +493,8 @@ body {
   background-color: transparent;
 } */
 
-.detailed::after  {
-  content: '';
+.detailed::after {
+  content: "";
   position: absolute;
   width: 220px;
   height: 8px;
@@ -488,6 +502,14 @@ body {
   left: 0;
   background-color: #FFE17F;
   z-index: -50;
+}
+
+.detailed-about-us::after {
+  width: 270px;
+}
+
+.detailed-write-to-us::after {
+  width: 260px;
 }
 
 .detailed:hover {
@@ -551,7 +573,7 @@ body {
 .products-yellow-list {
   display: grid;
   grid-template-columns: repeat(6, 160px);
- /* grid-template-rows: 160px, auto;*/
+  /* grid-template-rows: 160px, auto;*/
   gap: 40px;
   list-style-type: none;
   padding: 0;
@@ -601,17 +623,19 @@ body {
   }
 }
 
+/* Доставка Гарантия кредит закладки*/
 .client-info-section {
   /* background-color: #FFFFFF; */
   color: #000000;
   margin-top: 70px;
-  margin-bottom: 142px; /*72+70*/
+  margin-bottom: 142px;
+  /*72+70*/
   position: relative;
 }
 
 .client-info-section::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   min-height: 289px;
   background-color: #F0F0F0;
@@ -636,9 +660,10 @@ body {
   padding: 0;
 }
 
+/* Доставка Гарантия Кредит левая колонка ярлычки закладок */
 .client-info-choice {
-  width: 287px;  /*287px;*/
-  min-height: 40px;  /*319px;*/
+  width: 280px;
+  min-height: 40px;
   position: relative;
   margin: 0;
   padding: 0;
@@ -649,12 +674,12 @@ body {
   color: #FFE17F;
 }
 
-.client-info-choice::after  {
-  content: '';
+.client-info-choice::after {
+  content: "";
   position: absolute;
   width: 160px;
   height: 8px;
-  top: 6px;
+  top: 16px;
   left: 0;
   background-color: #FFE17F;
   z-index: -50;
@@ -670,8 +695,8 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  width: 153px;
-  height: 20px;
+  width: 160px; /*153px;*/
+  height: 40px; /*20px;*/
 }
 
 .client-info-choice-description-button-current {
@@ -684,6 +709,30 @@ body {
   height: 20px;
 }
 
+.client-info-choice:hover,
+.client-info-choice:active {
+  background-color: #000000;
+}
+
+.client-info-choice:hover  .client-info-choice-description-button,
+.client-info-choice:active .client-info-choice-description-button {
+  color: #FFE17F;
+  padding-left: 35px;
+}
+
+.client-info-choice:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 0;
+}
+
+@supports not selector(:focus-visible) {
+  .client-info-choice:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 0;
+  }
+}
+
+/* Доставка Гарантия Кредит правая колонка детали закладок*/
 .client-info-detail {
   width: 694px;
   min-height: 174px;
@@ -695,12 +744,12 @@ body {
 }
 
 .client-info-detail::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 7px;
-  height: 100%;   /*319px; */
+  height: 100%;
   top: 0;
-  left: 0;
+  left: -7px;
   background-color: #000000;
   /* z-index: -50; */
 }
@@ -751,7 +800,7 @@ body {
 .rare-text {
   width: 910px;
   height: 20px;
-  font-family: 'Raleway';
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -768,10 +817,9 @@ body {
   height: 100px;
 }
 
-.rare-i-icon {
+.rare-i-round {
   width: 40px;
   height: 40px;
-  display: block;
   margin: 30px auto;
   background: rgba(220, 220, 220, 0.5);
   border-radius: 50%;
@@ -779,6 +827,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   /* background-size: 40px 40px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rare-product-button {
@@ -790,8 +841,18 @@ body {
   display: flex;
 }
 
-.rare-product-button:hover {
+/* .rare-product-button:hover {
   opacity: 0.6;
+} */
+
+.rare-product-button:hover .rare-product-logo {
+  background-color: #FFC700;
+  opacity: 1;
+}
+
+.rare-product-button:hover .rare-i-icon {
+  color: #000000;
+  opacity: 1;
 }
 
 .rare-product-button:active {
@@ -866,14 +927,15 @@ body {
 
 .delivery-info {
   min-height: 520px;
-  width: 500px;  /*493px*/
+  width: 500px;
+  /*493px*/
   margin-right: 108px;
   display: block;
   position: relative;
 }
 
 .delivery-info::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 84px;
   height: 7px;
@@ -882,7 +944,7 @@ body {
 }
 
 /* .delivery-info::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 270px;
   height: 8px;
@@ -899,14 +961,16 @@ body {
 }
 
 .contacts {
-  min-height: 540px;  /*532px*/
-  width: 550px;       /*545px*/
+  min-height: 540px;
+  /*532px*/
+  width: 550px;
+  /*545px*/
   display: block;
   position: relative;
 }
 
 .contacts::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 84px;
   height: 7px;
@@ -915,7 +979,7 @@ body {
 }
 
 /* .contacts::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 260px;
   height: 8px;
@@ -1441,7 +1505,9 @@ body {
 
 .breadcrumbs-item:last-child::after {
   content: none;
-}/* \ */
+}
+
+/* \ */
 
 /* ФИЛЬТР СОРТИРОВКА*/
 .catalog-section {
@@ -1651,6 +1717,29 @@ body {
   min-height: 55px;
   width: 760px;
   vertical-align: middle;
+  border: 3px solid #E5E5E5;
+}
+
+.pagination-show-more:hover {
+  border: 3px solid #000000;
+}
+
+.pagination-show-more:active {
+  opacity: 0.3;
+}
+
+.pagination-show-more:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  border: 3px solid #E5E5E5;
+}
+
+@supports not selector(:focus-visible) {
+  .pagination-show-more:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+    border: 3px solid #E5E5E5;
+  }
 }
 
 /* Пагинация вперед-назад*/
@@ -1706,7 +1795,7 @@ body {
   min-width: 40px;
   min-height: 40px;
   padding: 10px;
- }
+}
 
 .pagination a {
   color: #444444;
@@ -1726,9 +1815,9 @@ body {
   color: #000000;
 }
 
-.pagination-prev:hover,
-.pagination-next:hover,
-.pagination-link:hover {
+.pagination-prev:not(:disabled):hover,
+.pagination-next:not(:disabled):hover,
+.pagination-link:not(:disabled):hover {
   background: #DCDCDC;
 }
 
@@ -1748,10 +1837,16 @@ body {
 }
 
 @supports not selector(:focus-visible) {
+
   .pagination-prev:focus,
   .pagination-next:focus,
   .pagination-link:focus {
     outline: 2px solid #AF4FFF;
     outline-offset: 0;
   }
+}
+
+/* самые приоритетные свойства*/
+.element-display-none {
+  display: none;
 }
