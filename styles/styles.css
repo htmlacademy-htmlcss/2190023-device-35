@@ -112,9 +112,9 @@ body {
 
 @supports not selector(:focus-visible) {
   .home-page-href-header:focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: 0;
-  }
+	outline: 2px solid #AF4FFF;
+	outline-offset: 0;
+}
 }
 
 .navigation-user-grid {
@@ -211,7 +211,7 @@ body {
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: center left 20px;
-
+	
 }
 
 .search-field:focus-visible {
@@ -275,9 +275,9 @@ body {
 
 @supports not selector(:focus-visible) {
   .search-button:focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: 2px;
-  }
+	outline: 2px solid #AF4FFF;
+	outline-offset: 2px;
+}
 }
 
 .account-link {
@@ -314,9 +314,9 @@ body {
 
 @supports not selector(:focus-visible) {
   .account-link:focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: 0;
-  }
+	outline: 2px solid #AF4FFF;
+	outline-offset: 0;
+}
 }
 
 /*--- КАТАЛОГ ТОВАРОВ ДОСТАВКА ГАРАНТИЯ КОНТАКТЫ ---*/
@@ -347,9 +347,9 @@ body {
 
 @supports not selector(:focus-visible) {
   .navigation-link::focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: 0;
-  }
+	outline: 2px solid #AF4FFF;
+	outline-offset: 0;
+}
 }
 
 /* --- слайды ---*/
@@ -403,9 +403,9 @@ body {
 
 @supports not selector(:focus-visible) {
   .slider-button:focus {
-    outline: 1px solid #AF4FFF;
-    outline-offset: 1px;
-  }
+	outline: 1px solid #AF4FFF;
+	outline-offset: 1px;
+}
 }
 
 /*--круглешочки внизу для сладйер-пагинации--*/
@@ -456,9 +456,9 @@ body {
 
 @supports not selector(:focus-visible) {
   .slider-pagination-bullets-button::focus {
-    outline: 1px solid #AF4FFF;
-    outline-offset: 1px;
-  }
+	outline: 1px solid #AF4FFF;
+	outline-offset: 1px;
+}
 }
 
 /*--- сами слайды с картинками и описанием 01 02 03 ---*/
@@ -504,7 +504,7 @@ body {
   position: absolute;
   content: "01";
   /* width: auto;
-  height: auto; */
+	height: auto; */
   color: #ffffff;
   background-color: transparent;
   top: 78px;
@@ -620,9 +620,9 @@ body {
 
 @supports not selector(:focus-visible) {
   .detailed-link:focus {
-    outline: 1px solid #AF4FFF;
-    outline-offset: -2px;
-  }
+	outline: 1px solid #AF4FFF;
+	outline-offset: -2px;
+}
 }
 
 .detailed:disabled {
@@ -633,7 +633,7 @@ body {
 
 .abilities-table {
   margin-top: 50px;
-
+	
 }
 
 .abilities-header {
@@ -711,9 +711,9 @@ body {
 
 @supports not selector(:focus-within) {
   .products-item:focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: 4px;
-  }
+	outline: 2px solid #AF4FFF;
+	outline-offset: 4px;
+}
 }
 
 /* Доставка Гарантия кредит закладки*/
@@ -822,9 +822,9 @@ body {
 
 @supports not selector(:focus-visible) {
   .client-info-choice:focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: 0;
-  }
+	outline: 2px solid #AF4FFF;
+	outline-offset: 0;
+}
 }
 
 /* Доставка Гарантия Кредит правая колонка детали закладок*/
@@ -961,9 +961,9 @@ body {
 
 @supports not selector(:focus-visible) {
   .rare-product-button:focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: 0;
-  }
+	outline: 2px solid #AF4FFF;
+	outline-offset: 0;
+}
 }
 
 .rare-product h2 {
@@ -1229,9 +1229,9 @@ body {
 
 @supports not selector(:focus-visible) {
   .button-subscribe:focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: 2px;
-  }
+	outline: 2px solid #AF4FFF;
+	outline-offset: 2px;
+}
 }
 
 .mailing-text-free {
@@ -1244,6 +1244,101 @@ body {
   height: 90px;
 }
 
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-bottom: 16px;
+  background-color: #DCDCDC;
+  border-radius: 2px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #000000;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 2px solid #242424;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+	opacity: 0.5;
+}
+
+.range-toggle:active {
+  background: #000000;
+}
+
+.range-toggle:focus-visible {
+  outline: 1px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+@supports not selector(:focus-visible) {
+  .range-toggle:focus {
+	outline: 1px solid #AF4FFF;
+	outline-offset: 2px;
+}
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+	background: #EBEBEB;
+	border: 2px solid #000000;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+	background: #EBEBEB;
+	border: 2px solid #000000;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px;
+}
+
+.catalog-filter {
+	margin-top: 60px;
+	position: relative;
+}
+
+.range-input {
+  width: 30px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/*.filter-group-cost {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  border: none;
+}*/
 
 .ok {
   fill: #08AF00;
@@ -1291,7 +1386,7 @@ body {
 
 /*device левый верхний угол футера*/
 /* .home-page-href-footer {
-   */
+*/
 .footer-device-link {
   /*margin-bottom: 35px;*/
   grid-column: 1 / 2;
@@ -1325,9 +1420,9 @@ body {
 
 @supports not selector(:focus-visible) {
   .footer-device-link:focus {
-    outline: 1px solid #AF4FFF;
-    outline-offset: -2px;
-  }
+	outline: 1px solid #AF4FFF;
+	outline-offset: -2px;
+}
 }
 
 .footer-contacts-address {
@@ -1396,9 +1491,9 @@ body {
 
 @supports not selector(:focus-visible) {
   .footer-info-link:focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: -14px;
-  }
+	outline: 2px solid #AF4FFF;
+	outline-offset: -14px;
+}
 }
 
 /* Телефон */
@@ -1434,9 +1529,9 @@ body {
 
 @supports not selector(:focus-visible) {
   .footer-telephone-address-phone:focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: 2px;
-  }
+	outline: 2px solid #AF4FFF;
+	outline-offset: 2px;
+}
 }
 
 .footer-social {
@@ -1494,9 +1589,9 @@ body {
 
 @supports not selector(:focus-visible) {
   .footer-social-link:focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: 2px;
-  }
+	outline: 2px solid #AF4FFF;
+	outline-offset: 2px;
+}
 }
 
 .footer-social-tg {
@@ -1594,7 +1689,7 @@ body {
 .academy-logo-image {
   display: block;
   /* margin-left: auto;
-  margin-right: 0; */
+	margin-right: 0; */
   fill: #FFC700;
 }
 
@@ -1614,9 +1709,9 @@ body {
 
 @supports not selector(:focus-visible) {
   .academy-logo-link:focus {
-    outline: 1px solid #AF4FFF;
-    outline-offset: -2px;
-  }
+	outline: 1px solid #AF4FFF;
+	outline-offset: -2px;
+}
 }
 
 /*----------- Каталог ------------*/
@@ -1704,9 +1799,9 @@ body {
 
 @supports not selector(:focus-visible) {
   .breadcrumbs-link:focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: 2px;
-  }
+	outline: 2px solid #AF4FFF;
+	outline-offset: 2px;
+}
 }
 
 /* ФИЛЬТР СОРТИРОВКА*/
@@ -1786,19 +1881,134 @@ body {
 
 @supports not selector(:focus-visible) {
   .sort-button:focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: 0;
-    opacity: 0.2;
-  }
+	outline: 2px solid #AF4FFF;
+	outline-offset: 0;
+	opacity: 0.2;
+}
 }
 
 /* Стоимость Цвет Bluetooth*/
-.filter-group-title {
-  font-family: "Rubik", sans-serif;
+.catalog-filter-group {	
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+	min-height: 20px;
+	min-width: 200px;
+	letter-spacing: -0.02em;
+	color: #000000;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  border: none;
+	padding-top: 12px;
+	border-top: 2px solid #000000;
+}
+/* Control */
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+/* Mark */
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #242424;
+}
+
+.control:hover .control-mark {
+  border-color: #814b18;
+}
+
+.control-input:disabled + .control-mark {
+  border-color: #242424;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  width: 12px;
+  height: 2px;
+  background-color: #242424;
+  content: "";
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  transform: rotate(45deg);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  transform: rotate(-45deg);
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #242424;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-label {
+  line-height: 22px;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  letter-spacing: -0.02em;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 260px;
+  margin-right: auto;
+}
+
+/* Control */
+.select-control {
+  width: 100%;
+  padding: 8px 14px;
+  padding-right: 48px;
+  font: inherit;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 2px solid #242424;
+  background-image: url("../images/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border-color: #af7842;
+}
+
+.select-control:focus {
+  outline: 2px solid #dbb590;
 }
 
 /*Черный белый Есть нет*/
@@ -1897,9 +2107,9 @@ body {
 
 @supports not selector(:focus-within) {
   .product-card:focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: 0;
-  }
+	outline: 2px solid #AF4FFF;
+	outline-offset: 0;
+}
 }
 
 /*Загрузить еще*/
@@ -1936,10 +2146,10 @@ body {
 
 @supports not selector(:focus-visible) {
   .pagination-show-more:focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: 2px;
-    border: 3px solid #E5E5E5;
-  }
+	outline: 2px solid #AF4FFF;
+	outline-offset: 2px;
+	border: 3px solid #E5E5E5;
+}
 }
 
 /* Пагинация вперед-назад*/
@@ -2037,13 +2247,13 @@ body {
 }
 
 @supports not selector(:focus-visible) {
-
+	
   .pagination-prev:focus,
   .pagination-next:focus,
   .pagination-link:focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: 0;
-  }
+	outline: 2px solid #AF4FFF;
+	outline-offset: 0;
+}
 }
 
 /* самые приоритетные свойства*/
