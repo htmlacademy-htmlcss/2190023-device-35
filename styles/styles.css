@@ -74,8 +74,7 @@ body {
   color: #000000;
   width: 1040px;
   display: grid;
-  grid-template-rows: 44px auto auto;
-  /*36+(2+2)*2=44*/
+  grid-template-rows: 44px auto auto;  /*36+(2+2)*2=44*/
   gap: 30px;
   margin-top: 20px;
   margin-left: auto;
@@ -122,8 +121,7 @@ body {
   grid-column: 1 / -1;
   justify-self: start;
   display: grid;
-  grid-template-columns: 517px 497px;
-  /* + 26 = 1040*/
+  grid-template-columns: 517px 497px;  /* + 26 = 1040*/
   column-gap: 26px;
   align-items: center;
   padding: 0;
@@ -132,7 +130,6 @@ body {
 
 .navigation {
   grid-column: 1 / -1;
-  /* justify-self: space-between; */
   margin: 0;
   padding: 0;
   display: grid;
@@ -184,7 +181,6 @@ body {
 
 /*Форма поиска*/
 .search-form {
-  /* box-sizing: border-box; */
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -504,8 +500,6 @@ body {
 .slider-description::before {
   position: absolute;
   content: "01";
-  /* width: auto;
-  height: auto; */
   color: #ffffff;
   background-color: transparent;
   top: 78px;
@@ -556,7 +550,7 @@ body {
   color: inherit;
   position: relative;
   width: 220px;
-  height: 40px;
+  min-height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -576,7 +570,6 @@ body {
   text-decoration: none;
   display: block;
   width: fit-content;
-  /*210px;*/
   margin: 0 auto;
   height: 20px;
   padding: 10px 5px;
@@ -679,7 +672,6 @@ body {
 .products-yellow-list {
   display: grid;
   grid-template-columns: repeat(6, 160px);
-  /* grid-template-rows: 160px, auto;*/
   gap: 40px;
   list-style-type: none;
   padding: 0;
@@ -731,11 +723,9 @@ body {
 
 /* Доставка Гарантия кредит закладки*/
 .client-info-section {
-  /* background-color: #FFFFFF; */
   color: #000000;
   margin-top: 70px;
-  margin-bottom: 142px;
-  /*72+70*/
+  margin-bottom: 142px;  /*72+70*/
   position: relative;
 }
 
@@ -751,11 +741,9 @@ body {
 }
 
 .client-info {
-  /* background-color: #F0F0F0; */
   display: grid;
   grid-template-columns: 287px 873px;
   grid-template-rows: 319px;
-  /* justify-content: space-around; */
 }
 
 .client-info-description {
@@ -785,7 +773,7 @@ body {
   position: absolute;
   width: 160px;
   height: 8px;
-  top: 16px;
+  top: 8px;
   left: 0;
   background-color: #FFE17F;
   z-index: -50;
@@ -802,16 +790,12 @@ body {
   border: none;
   cursor: pointer;
   width: 160px;
-  /*153px;*/
-  height: 40px;
-  /*20px;*/
 }
 
 .client-info-choice-description-button-current {
   background-color: #000000;
   color: #FFE17F;
   margin: 9px 120px 11px 0;
-  /* padding: 9px 120px 11px 0; */
   text-align: center;
   width: 160px;
   height: 20px;
@@ -859,7 +843,6 @@ body {
   top: 0;
   left: -7px;
   background-color: #000000;
-  /* z-index: -50; */
 }
 
 .client-info h2 {
@@ -934,7 +917,6 @@ body {
   border: none;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: 40px 40px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -948,10 +930,6 @@ body {
   border: none;
   display: flex;
 }
-
-/* .rare-product-button:hover {
-  opacity: 0.6;
-} */
 
 .rare-product-button:hover .rare-product-logo {
   background-color: #FFC700;
@@ -1036,7 +1014,6 @@ body {
 .delivery-info {
   min-height: 520px;
   width: 500px;
-  /*493px*/
   margin-right: 108px;
   display: block;
   position: relative;
@@ -1051,16 +1028,6 @@ body {
   background-color: #000000;
 }
 
-/* .delivery-info::after {
-  content: "";
-  position: absolute;
-  width: 270px;
-  height: 8px;
-  top: 465px;
-  left: -10px;
-  background-color: #FFE17F;
-} */
-
 .delivery-list {
   display: grid;
   grid-template-rows: 20px 20px 20px;
@@ -1070,9 +1037,7 @@ body {
 
 .contacts {
   min-height: 540px;
-  /*532px*/
   width: 550px;
-  /*545px*/
   display: block;
   position: relative;
 }
@@ -1086,17 +1051,6 @@ body {
   background-color: #000000;
 }
 
-/* .contacts::after {
-  content: "";
-  position: absolute;
-  width: 260px;
-  height: 8px;
-  top: 520px;
-  left: -10px;
-  background-color: #FFE17F;
-} */
-
-
 .delivery-item {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
@@ -1104,7 +1058,6 @@ body {
   line-height: 20px;
   letter-spacing: -0.02em;
 }
-
 
 /* Подпишитесь на рассылку*/
 .mailing {
@@ -1152,7 +1105,6 @@ body {
 
 .mailing-form {
   display: grid;
-  /* width: 810px; */
   grid-template-columns: 557px 253px;
   grid-gap: 0;
 }
@@ -1164,8 +1116,6 @@ body {
   font-size: 18px;
   line-height: 30px;
   grid-column: 1 / 2;
-  /* width: 560px; */
-  /* justify-self: start; */
   margin: 0;
   padding: 0;
   padding-left: 16px;
@@ -1257,13 +1207,6 @@ body {
   height: 90px;
 }
 
-/*.filter-group-cost {
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
-  border: none;
-}*/
-
 .ok {
   fill: #08AF00;
   margin-right: 16.5px;
@@ -1297,7 +1240,6 @@ body {
   width: 80px;
   height: 7px;
   left: 0;
-  /* right: 15px; */
   bottom: 8px;
   background-color: #FFC700;
   content: "";
@@ -1309,10 +1251,7 @@ body {
 }
 
 /*device левый верхний угол футера*/
-/* .home-page-href-footer {
-*/
 .footer-device-link {
-  /*margin-bottom: 35px;*/
   grid-column: 1 / 2;
   align-self: start;
 }
@@ -1503,7 +1442,6 @@ body {
 
 .footer-social-link:active {
   background-color: #FFC700;
-  /* fill: #AF4FFF; */
 }
 
 .footer-social-link:focus-visible {
@@ -1558,7 +1496,6 @@ body {
 
 .footer-contacts {
   width: 239px;
-  /*234 !!!*/
   height: 182px;
   margin-top: 62px;
   margin-right: 124px;
@@ -1612,8 +1549,6 @@ body {
 
 .academy-logo-image {
   display: block;
-  /* margin-left: auto;
-  margin-right: 0; */
   fill: #FFC700;
 }
 
@@ -1639,9 +1574,6 @@ body {
 }
 
 /*----------- Каталог ------------*/
-/*.main-inner {
-  padding-top: 35px;
-}*/
 
 .main-inner h1 {
   font-family: "Raleway", sans-serif;
@@ -1659,10 +1591,7 @@ body {
 
 .inner-header {
   width: 1040px;
-  /*79px;*/
   min-height: 86px;
-  /*155px;*/
-  /* margin: 70px auto 35px auto; */
   margin: 0 auto;
 }
 
@@ -1762,8 +1691,6 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* padding-left: 40px;
-  padding-right: 40px; */
 }
 
 /* Надпись СОРТИРОВКА */
@@ -1774,7 +1701,6 @@ body {
   color: #000000;
   display: flex;
   justify-content: space-between;
-  /*flex-start;*/
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -2038,7 +1964,6 @@ body {
   font-size: 18px;
   line-height: 30px;
   background-color: transparent;
-  /*#F0F0F0;*/
   width: 100%;
   border: none;
   background-image: url("../images/icons/arrow-down.svg");
@@ -2113,6 +2038,7 @@ body {
   width: 360px;
   min-height: 452px;
   margin-right: 40px;
+  position: relative;
 }
 
 .product-card a {
@@ -2146,6 +2072,52 @@ body {
   color: #444444;
   background-color: #ffffff;
   align-self: center;
+}
+
+.product-card-wrapping {
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.product-card-detailed {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  width: 220px;
+  min-height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  display: none;
+  z-index: 2;
+}
+
+.product-card-detailed::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 8px;
+  top: 16px;
+  left: 0;
+  background-color: #FFE17F;
+  z-index: -1;
+}
+
+.product-card:hover .product-card-detailed {
+  opacity: 1;
+  display: flex;
+}
+
+.product-card:active .product-card-detailed::after {
+  opacity: 1;
+  background-color: #FFC700;
 }
 
 .product-card:hover {
@@ -2303,7 +2275,6 @@ body {
 }
 
 @supports not selector(:focus-visible) {
-
   .pagination-prev:focus,
   .pagination-next:focus,
   .pagination-link:focus {
@@ -2318,7 +2289,6 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  /* min-height: 50px; */
 }
 
 .subcatalog,
@@ -2326,9 +2296,9 @@ body {
   display: none;
 }
 
+/*для поповера .popover-catalog*/
 .catalog-item {
   position: relative;
-  /*для поповера .popover-catalog*/
 }
 
 .catalog-plus {
@@ -2381,7 +2351,7 @@ body {
 }
 
 .popover {
-  position: absolute;  /*navigation-corf - position: relative*/
+  position: absolute;  /* для navigation-corf - position: relative*/
   top: 30px;
   right: -100px;
   z-index: 1;
@@ -2466,7 +2436,6 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  /* text-transform: uppercase; */
 }
 
 .cart-item .button {
@@ -2477,7 +2446,6 @@ body {
 }
 
 .cart-item + .cart-item {
-  /* padding-top: 20px; */
   border-top: 1px solid #444444;
 }
 
@@ -2514,7 +2482,6 @@ body {
   width: 280px;
   min-height: 50px;
   border: none;
-  /* border: #C4C4C4 solid 3px; */
 }
 
 .button-open-cart:hover {
@@ -2597,7 +2564,6 @@ body {
 
 .popover-modal {
   display: none;
-  /*field-group-how-many -*/
   position: absolute;
   width: 200px;
   min-height: 120px;
@@ -2620,7 +2586,6 @@ body {
   background-image: url("../images/icons/triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: 26px; */
   cursor: pointer;
   top: -6px;
   left: 59.5%;
@@ -2747,14 +2712,11 @@ body {
   font-size: 18px;
   line-height: 30px;
   grid-column: 1 / 2;
-  /* width: 560px; */
-  /* justify-self: start; */
   margin: 0;
   padding: 0;
   padding-left: 16px;
   background-color: #F0F0F0;
   border: none;
-  /* border-bottom: #C4C4C4 solid 3px; */
   min-height: 57px;
   width: auto;
   color: #000000;
@@ -2816,20 +2778,6 @@ body {
 .modal-form-field:hover {
   background-color: #DCDCDC;
 }
-
-/* .modal-form-field:focus-visible {
-  outline: 2px solid #AF4FFF;
-  background-color: #DCDCDC;
-  outline-offset: 0;
-}
-
-@supports not selector(:focus-visible) {
-  .modal-form-field:focus {
-    outline: 2px solid #AF4FFF;
-    background-color: #DCDCDC;
-    outline-offset: 0;
-  }
-} */
 
 .modal-form-field:disabled {
   opacity: 0.3;
