@@ -505,7 +505,7 @@ body {
   position: absolute;
   content: "01";
   /* width: auto;
-	height: auto; */
+  height: auto; */
   color: #ffffff;
   background-color: transparent;
   top: 78px;
@@ -1613,7 +1613,7 @@ body {
 .academy-logo-image {
   display: block;
   /* margin-left: auto;
-	margin-right: 0; */
+  margin-right: 0; */
   fill: #FFC700;
 }
 
