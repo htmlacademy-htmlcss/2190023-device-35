@@ -11,7 +11,7 @@
     <header class="page-header">
       <div class="page-header-container">
 
-        <a class="home-page-href-header" href="#">
+        <a class="home-page-href-header" href="./index.html">
           <svg class="nav-logo" aria-hidden="true" focusable="false" width="145" height="36" viewBox="0 0 145 36"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -66,46 +66,47 @@
               </a>
               <div class="popover popover-cart">
                 <div class="popover-content">
-                  <button class="visually-hidden popover-close-button button button-light">2
-                    <span class="visually-hidden">Закрыть</span>
-                  </button>
                   <h2 class="visually-hidden popover-title">Содержимое корзины</h2>
                   <ul class="cart-items-list">
                     <li class="cart-item">
-                      <img class="popover-img" src="images/catalog-monopod.jpg" width="39" height="43"
-                        alt="Любительская селфи-палка">
-                      <p class="cart-item-title">Любительская селфи-палка</p>
+                      <a class="cart-link" href="./catalog.html">
+                        <img class="popover-img" src="images/catalog-monopod.jpg" width="39" height="43"
+                          alt="Любительская селфи-палка">
+                        <p class="cart-item-title">Любительская селфи-палка</p>
+                      </a>
                       <button type="button" class="cart-item-button button">
-                        <svg width="10" height="11" viewBox="0 0 10 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg">
                           <path
-                            d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z"
-                            />
+                            d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z" />
                         </svg>
                         <span class="visually-hidden">Удалить из корзины</span>
                       </button>
                     </li>
                     <li class="cart-item">
-                      <img class="popover-img" src="images/catalog-monopod-pro.jpg" width="39" height="43"
-                        alt="Профессиональная селфи-палка">
-                      <p class="cart-item-title">Профессиональная селфи-палка</p>
+                      <a class="cart-link" href="./catalog.html">
+                        <img class="popover-img" src="images/catalog-monopod-pro.jpg" width="39" height="43"
+                          alt="Профессиональная селфи-палка">
+                        <p class="cart-item-title">Профессиональная селфи-палка</p>
+                      </a>
                       <button type="button" class="cart-item-button button">
-                        <svg width="10" height="11" viewBox="0 0 10 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg">
                           <path
-                            d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z"
-                             />
+                            d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z" />
                         </svg>
                         <span class="visually-hidden">Удалить из корзины</span>
                       </button>
                     </li>
                   </ul>
-                  <div class="cart-total" >
+                  <div class="cart-total">
                     <p>Товаров: 2</p>
                     <p>Сумма: 2000 ₽</p>
                   </div>
                   <div class="cart-button">
-                  <button class="button-open-cart" type="submit">
-                    <p>Открыть корзину</p>
-                  </button>
+                    <button class="button-open-cart" type="button">
+                      <p>Открыть корзину</p>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -116,7 +117,7 @@
         <nav class="navigation">
           <ul class="catalog">
             <li class="catalog-item">
-              <a class="navigation-link" href="#">Каталог товаров</a>
+              <a class="navigation-link" href="/catalog.html">Каталог товаров</a>
               <div class="popover-catalog">
               <ul class="subcatalog">
                 <li><a class="account-link" href="#">Виртуальная реальность</a></li>
@@ -178,10 +179,10 @@
                     <div class="range">
                       <div class="range-scale">
                         <div class="range-bar" style="left: 0; width: 119px">
-                          <button class="range-toggle toggle-min">
+                          <button class="range-toggle toggle-min" type="button">
                             <span class="visually-hidden">Изменить минимальную цену.</span>
                           </button>
-                          <button class="range-toggle toggle-max">
+                          <button class="range-toggle toggle-max" type="button">
                             <span class="visually-hidden">Изменить максимальную цену.</span>
                           </button>
                         </div>
@@ -276,12 +277,12 @@
                     <option value="expensive">Дорогое</option>
                   </select>
                 </div>
-                <button class="sort-button"><svg aria-hidden="true" focusable="false" width="12" height="10"
+                <button class="sort-button" type="button"><svg aria-hidden="true" focusable="false" width="12" height="10"
                     viewBox="0 0 12 10" xmlns="http://www.w3.org/2000/svg">
                     <path d="m6 0 5.5 10H.5" />
                   </svg>
                   <span class="visually-hidden">Стрелка вверх</span></button>
-                <button class="sort-button">
+                <button class="sort-button" type="button">
                   <svg aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 10 .5 0h11" />
