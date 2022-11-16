@@ -19,23 +19,22 @@
             <path d="M83.46 0v10.1L91.06 0h-7.6Z" fill="#510094" />
           </svg>
           <!--<img class="nav-logo" src="images/logo-header.svg" width="145" height="36"
-            alt="Логотип Девайс.">-->
+					alt="Логотип Девайс.">-->
         </a>
 
         <div class="navigation-user-grid">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="search" name="search" id="search" placeholder="Поиск по сайту">
-            <button type="submit">Найти</button>
+            <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту">
+            <button class="search-button" type="submit">
+              <p>Найти</p>
+            </button>
           </form>
-
-          <!-- <button class="account-link account-link-login">Войти</button> -->
 
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="account-link account-link-login" href="#">
                 <svg class="account-icon" aria-hidden="true" focusable="false" width="13" height="13"
-                  viewBox="0 0 13 13" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
+                  viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0 12.79h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.5-3.5-3.5S3 2.39 3 4.29c0 1.3.7 2.4 1.7 3-2.6.7-4.5 2.9-4.7 5.5Z" />
                 </svg>
@@ -48,8 +47,7 @@
             <li class="navigation-item">
               <a class="account-link" href="#">
                 <svg class="account-icon" aria-hidden="true" focusable="false" width="10" height="13"
-                  viewBox="0 0 10 13" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
+                  viewBox="0 0 10 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 .79H4v12h2v-12ZM2 4.79H0v8h2v-8ZM10 3.79H8v9h2v-9Z" />
                 </svg>
                 Сравнить</a>
@@ -57,8 +55,7 @@
             <li class="navigation-item navigation-corf">
               <a class="account-link" href="#">
                 <svg class="account-icon" aria-hidden="true" focusable="false" width="16" height="15"
-                  viewBox="0 0 16 15" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
+                  viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="m15.3 5.79-3.5.2-3.2-4.9c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1l1.9-6.9v-.2c0-.4-.3-.8-.7-.8ZM8 2.69l2.2 3.2H5.9L8 2.69Z" />
                 </svg>
@@ -67,12 +64,71 @@
                 </div>
                 Корзина
               </a>
+              <div class="popover popover-cart">
+                <div class="popover-content">
+                  <button class="visually-hidden popover-close-button button button-light">2
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                  <h2 class="visually-hidden popover-title">Содержимое корзины</h2>
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <img class="popover-img" src="images/catalog-monopod.jpg" width="39" height="43"
+                        alt="Любительская селфи-палка">
+                      <p class="cart-item-title">Любительская селфи-палка</p>
+                      <button type="button" class="cart-item-button button">
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z"
+                            />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <img class="popover-img" src="images/catalog-monopod-pro.jpg" width="39" height="43"
+                        alt="Профессиональная селфи-палка">
+                      <p class="cart-item-title">Профессиональная селфи-палка</p>
+                      <button type="button" class="cart-item-button button">
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z"
+                             />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="cart-total" >
+                    <p>Товаров: 2</p>
+                    <p>Сумма: 2000 ₽</p>
+                  </div>
+                  <div class="cart-button">
+                  <button class="button-open-cart" type="submit">
+                    <p>Открыть корзину</p>
+                  </button>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
 
         <nav class="navigation">
-          <a class="navigation-link" href="#">Каталог товаров</a>
+          <ul class="catalog">
+            <li class="catalog-item">
+              <a class="navigation-link" href="#">Каталог товаров</a>
+              <div class="popover-catalog">
+              <ul class="subcatalog">
+                <li><a class="account-link" href="#">Виртуальная реальность</a></li>
+                <li><a class="account-link" href="#">Фитнес-браслеты</a></li>
+                <li><a class="account-link" href="#">Квадрокоптеры</a></li>
+                <li><a class="account-link" href="#">Моноподы для селфи</a></li>
+                <li><a class="account-link" href="#">Умные часы</a></li>
+                <li><a class="account-link" href="#">Экшн-камеры</a></li>
+              </ul>
+              </div>
+            </li>
+          </ul>
 
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -113,67 +169,95 @@
             <div class="catalog-left-column">
               <h2 class="visually-hidden">Список товаров с фильтрами</h2>
               <div class="catalog-all-filters">
-                <p class=" sort-item">Фильтр:</p>
+                <div class="filter">
+                  <p class="sort-item">Фильтр:</p>
+                </div>
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                  <fieldset class="filter-group-cost">
+                  <fieldset class="catalog-filter-group">
                     <legend class="filter-group-title">Стоимость</legend>
-                    <div class="half-width">
-                      0 <input type="range" id="cost" name="cost" min="0" max="5000" step="1"> 5000
+                    <div class="range">
+                      <div class="range-scale">
+                        <div class="range-bar" style="left: 0; width: 119px">
+                          <button class="range-toggle toggle-min">
+                            <span class="visually-hidden">Изменить минимальную цену.</span>
+                          </button>
+                          <button class="range-toggle toggle-max">
+                            <span class="visually-hidden">Изменить максимальную цену.</span>
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="range-wrapper-inputs">
+                        <label class="range-wrapper-label">
+                          от <input class="range-input" type="number" value="0" name="min-price">
+                        </label>
+                        <label class="range-wrapper-label">
+                          до <input class="range-input" type="number" value="5000" name="max-price" >
+                        </label>
+                      </div>
                     </div>
                   </fieldset>
-                  <fieldset class="filter-group">
+                  <fieldset class="catalog-filter-group">
                     <legend class="filter-group-title">Цвет</legend>
-                    <ul class="filter-group-list">
-                      <li class="filter-group-item">
+                    <ul class="catalog-filter-list">
+                      <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="black">
-                          Черный
+                          <input class="visually-hidden control-input" type="checkbox" name="bed-head-for-men" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Черный</span>
                         </label>
                       </li>
-                      <li class="filter-group-item">
+                      <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="white" checked>
-                          Белый
+                          <input class="visually-hidden control-input" type="checkbox" name="homme-deep-cleansing-cool">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Белый</span>
                         </label>
                       </li>
-                      <li class="filter-group-item">
+                      <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="blue" checked>
-                          Синий
+                          <input class="visually-hidden control-input" type="checkbox" name="so-intense">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Синий</span>
                         </label>
                       </li>
-                      <li class="filter-group-item">
+                      <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="red">
-                          Красный
+                          <input class="visually-hidden control-input" type="checkbox" name="sprekenhus">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Красный</span>
                         </label>
                       </li>
-                      <li class="filter-group-item">
+                      <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="pink">
-                          Розовый
+                          <input class="visually-hidden control-input" type="checkbox" name="firm-storе">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Розовый</span>
                         </label>
                       </li>
                     </ul>
                   </fieldset>
-                  <fieldset class="filter-group">
+                  <fieldset class="catalog-filter-group">
                     <legend class="filter-group-title">Bluetooth</legend>
-                    <ul class="filter-group-list">
-                      <li class="filter-group-item">
+                    <ul class="catalog-filter-list">
+                      <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="product-group" value="there-is">
-                          Есть
+                          <input class="visually-hidden control-input" type="radio" name="product-group"
+                            value="shaving-supplies" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Есть</span>
                         </label>
                       </li>
-                      <li class="filter-group-item">
+                      <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="product-group" value="no">
-                          Нет
+                          <input class="visually-hidden control-input" type="radio" name="product-group"
+                            value="care-products">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Нет</span>
                         </label>
                       </li>
                     </ul>
                   </fieldset>
-
                   <div class="detailed">
                     <button class="detailed detailed-button" type="submit">Показать</button>
                   </div>
@@ -185,11 +269,13 @@
 
               <div class="sort">
                 <p class="sort-item">Сортировка:</p>
-                <select class="select-control" aria-label="Сортировка">
-                  <option value="popular">Популярные</option>
-                  <option value="cheap">Дешёвое</option>
-                  <option value="expensive">Дорогое</option>
-                </select>
+                <div class="select">
+                  <select class="select-control" aria-label="">
+                    <option value="popular">Популярное</option>
+                    <option value="cheap">Дешёвое</option>
+                    <option value="expensive">Дорогое</option>
+                  </select>
+                </div>
                 <button class="sort-button"><svg aria-hidden="true" focusable="false" width="12" height="10"
                     viewBox="0 0 12 10" xmlns="http://www.w3.org/2000/svg">
                     <path d="m6 0 5.5 10H.5" />
@@ -303,7 +389,7 @@
         <!--</section>-->
 
         <!--<section class="footer-info">
-          <h2 class="visually-hidden">Информация</h2>-->
+			<h2 class="visually-hidden">Информация</h2>-->
         <ul class="footer-info-list">
           <li class="footer-info-item">
             <!-- class="footer-info-item">-->
@@ -336,7 +422,7 @@
         <!--</section>-->
 
         <!--<section class="footer-telephone">
-          <h2 class="visually-hidden">Телефон</h2>-->
+			<h2 class="visually-hidden">Телефон</h2>-->
         <address class="footer-telephone-address">
           <a class="footer-telephone-address-phone" href="tel:+78128121212">Тел.: +7(812)812-12-12</a>
         </address>
