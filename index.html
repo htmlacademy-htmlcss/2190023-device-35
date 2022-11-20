@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Девайс</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="icon" href="./images/icons/favicon.ico">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -101,12 +101,12 @@
                     <p>Товаров: 2</p>
                     <p>Сумма: 2000 ₽</p>
                   </div>
-                  <div class="cart-button">
-                    <button class="button-open-cart" type="button">
+                  <!-- <div class="cart-button"> -->
+                    <button class="cart-button button-open-cart" type="button">
                       <span>Открыть корзину</span>
                     </button>
                     <!-- <a class="button-open-cart" href="#">Открыть корзину</a> -->
-                  </div>
+                  <!-- </div> -->
                 </div>
               </div>
             </li>
@@ -334,8 +334,6 @@
               <p class="client-info-detail-description">Мы с удовольствием доставим ваш товар прямо<br> к вашему
                 подъезду
                 совершенно бесплатно! Ведь <br>мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              <!-- <img class="delivery-logo" src="images/delivery.svg" width="136" height="164"
-                alt="Иконографичное изображение доставщика."> -->
             </div>
           </div>
 
@@ -346,8 +344,6 @@
               <h2>Гарантия</h2>
               <p class="client-info-detail-description">Если из-за возгорания купленного у нас товара у вас сгорит дом -
                 не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-              <!-- <img class="delivery-logo" src="images/guarantee.svg" width="171" height="195"
-                alt="Иконографичное изображение гарантии."> -->
             </div>
           </div>
 
@@ -358,8 +354,6 @@
               <h2>Кредит</h2>
               <p class="client-info-detail-description">Залезть в долговую яму стало проще! Кредитные консультанты
                 подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-              <!-- <img class="delivery-logo" src="images/credit.svg" width="156" height="188"
-                alt="Иконографичное изображение кредита."> -->
             </div>
           </div>
         </div>
@@ -472,10 +466,6 @@
         <address class="footer-contacts-address">
           <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
-        <!-- <div class="yellow-line">
-          <p class="visually-hidden">Желтая полоса</p>
-        </div> -->
-
         <ul class="footer-info-list">
           <li class="footer-info-item">
             <a class="footer-info-link" href="#">ДОСТАВКА</a>
@@ -530,23 +520,23 @@
           </h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group field-group-name">
-              <label class="modal-label" for="auth-name">Ваше имя</label>
+              <label class="modal-label" for="auth-name">Ваше имя:</label>
               <span class="your-name">Добавьте имя</span>
               <input class="modal-form-field" type="text" id="auth-name" name="auth-name" placeholder="Введите имя">
             </p>
             <p class="field-group field-group-email">
-              <label class="modal-label" for="modal-email-input">Ваш e-mail</label>
+              <label class="modal-label" for="modal-email-input">Ваш e-mail:</label>
               <input class="modal-form-field" type="email" id="modal-email-input" name="modal-email-input"
                 placeholder="почта">
               <span class="funny-address">Забавный у вас адрес</span>
             </p>
             <p class="field-group field-group-what">
-              <label class="modal-label" for="what-to-deliver">Что нужно привезти</label>
+              <label class="modal-label" for="what-to-deliver">Что нужно привезти:</label>
               <input class="modal-form-field" type="text" id="what-to-deliver" name="what-to-deliver"
                 placeholder="В свободной форме">
             </p>
             <div class="field-group field-group-how-many"><span class="tooltip">
-              <label class="modal-label" for="quantity">Количество</label>
+              <label class="modal-label" for="quantity">Количество:</label>
 
                 <button class="tooltip-toggle" type="button">
                   <svg width="26" class="modal-i-icon" aria-hidden="true" focusable="false" height="26"
@@ -555,10 +545,8 @@
                     <path d="M14 7h-2v2h2V7Zm0 4h-2v8h2v-8Z" />
                   </svg>
                 </button>
-                <span class="tooltip-text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</span>
+                <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
               </span>
-              <!-- <div class="popover-modal">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к
-                провозу багажа.</div> -->
               <div class="modal-quantity-counter">
                 <button class="modal-quantity-button" type="button">-</button>
                 <input class="modal-quantity-field" type="text" id="quantity" name="quantity" placeholder="1" value="1">
