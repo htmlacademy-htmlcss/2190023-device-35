@@ -40,7 +40,7 @@
                 </svg>
                 Войти</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-compare">
               <a class="account-link" href="#">
                 <svg class="account-icon" aria-hidden="true" focusable="false" width="10" height="13"
                   viewBox="0 0 10 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img"
@@ -50,7 +50,7 @@
                 Сравнить</a>
             </li>
             <li class="navigation-item navigation-corf">
-              <a class="account-link" href="#">
+              <a class="account-link navigation-cart" href="#">
                 <svg class="account-icon" aria-hidden="true" focusable="false" width="16" height="15"
                   viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img"
                   aria-label="Корзина.">
@@ -101,12 +101,9 @@
                     <p>Товаров: 2</p>
                     <p>Сумма: 2000 ₽</p>
                   </div>
-                  <!-- <div class="cart-button"> -->
                     <button class="cart-button button-open-cart" type="button">
                       <span>Открыть корзину</span>
                     </button>
-                    <!-- <a class="button-open-cart" href="#">Открыть корзину</a> -->
-                  <!-- </div> -->
                 </div>
               </div>
             </li>
@@ -116,20 +113,22 @@
         <nav class="navigation">
           <ul class="catalog">
             <li class="catalog-item">
-              <a class="navigation-link" href="./catalog.html">Каталог товаров</a>
-              <!-- <div class="popover-catalog"> -->
-              <ul class="popover-catalog subcatalog">
-                <li><a class="account-link" href="./catalog.html">Виртуальная реальность</a></li>
-                <li><a class="account-link" href="./catalog.html">Фитнес-браслеты</a></li>
-                <li><a class="account-link" href="./catalog.html">Квадрокоптеры</a></li>
-                <li><a class="account-link" href="./catalog.html">Моноподы для селфи</a></li>
-                <li><a class="account-link" href="./catalog.html">Умные часы</a></li>
-                <li><a class="account-link" href="./catalog.html">Экшн-камеры</a></li>
-              </ul>
-              <!-- </div> -->
+              <a class="navigation-link" href="#">Каталог товаров</a>
+              <div class="popover-catalog">
+                <div class="popover-catalog-content">
+                  <ul class="subcatalog">
+                    <li><a class="account-link" href="./catalog.html">Виртуальная реальность</a></li>
+                    <li><a class="account-link" href="./catalog.html">Фитнес-браслеты</a></li>
+                    <li><a class="account-link" href="./catalog.html">Квадрокоптеры</a></li>
+                    <li><a class="account-link" href="./catalog.html">Моноподы для селфи</a></li>
+                    <li><a class="account-link" href="./catalog.html">Умные часы</a></li>
+                    <li><a class="account-link" href="./catalog.html">Экшн-камеры</a></li>
+                  </ul>
+                </div>
+              </div>
             </li>
           </ul>
-          <ul class="navigation-list">
+          <ul class="navigation-list navigation-list-second-menu">
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка</a>
             </li>
@@ -157,18 +156,16 @@
                   <p class="device-detail-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
                     лазером,
                     замаскированным под стандартную камеру.</p>
-                  <div class="detailed">
+                  <div class="detailed detailed-slider">
                     <a class="detailed-link" href="#">Подробнее</a>
                   </div>
                   <table class="abilities-table">
                     <tr class="abilities-header">
                       <td class="abilities-header">800 м</td>
-                      <td class="abilities-blank"></td>
                       <td class="abilities-header">50 м</td>
                     </tr>
                     <tr>
                       <td class="abilities-footer">Дальность полета</td>
-                      <td class="abilities-blank"></td>
                       <td class="abilities-footer">Радиус поражения</td>
                     </tr>
                   </table>
@@ -183,17 +180,15 @@
                   <p class="device-detail-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не
                     пропускать
                     занятия и соблюдать диету.</p>
-                  <div class="detailed">
+                  <div class="detailed detailed-slider">
                     <a class="detailed-link" href="#">Подробнее</a>
                   </div>
                   <table class="abilities-table">
                     <tr class="abilities-header">
                       <td class="abilities-header">48 часов</td>
-                      <td class="abilities-blank"></td>
                     </tr>
                     <tr>
                       <td class="abilities-footer">Без подзарядки</td>
-                      <td class="abilities-blank"></td>
                     </tr>
                   </table>
                 </div>
@@ -206,22 +201,18 @@
                   <h2>Делай селфи, как Бен Стиллер!</h2>
                   <p class="device-detail-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь
                     (Восемь, Карл!) метров длиной и весом всего 5кг.</p>
-                  <div class="detailed">
+                  <div class="detailed detailed-slider">
                     <a class="detailed-link" href="#">Подробнее</a>
                   </div>
                   <table class="abilities-table">
                     <tr class="abilities-header">
                       <td class="abilities-header">8,5 м</td>
-                      <td class="abilities-blank"></td>
                       <td class="abilities-header">5 кг</td>
-                      <td class="abilities-blank"></td>
                       <td class="abilities-header">Карбон</td>
                     </tr>
                     <tr>
                       <td class="abilities-footer">Длина палки</td>
-                      <td class="abilities-blank"></td>
                       <td class="abilities-footer">Вес палки</td>
-                      <td class="abilities-blank"></td>
                       <td class="abilities-footer">Материал</td>
                     </tr>
                   </table>
@@ -263,8 +254,6 @@
               <a href="./catalog">
                 <div class="products-yellow prod-vr">
                   <span class="visually-hidden">Лого виртуальной реальности.</span>
-                  <!-- <img class="products-logo" src="images/products/prod-vr.svg" width="97" height="55"
-                    alt="Лого виртуальной реальности."> -->
                 </div>
                 Виртуальная реальность
               </a>
@@ -273,7 +262,7 @@
             <li class="products-item">
               <a href="./catalog">
                 <div class="products-yellow prod-monopod">
-                  <span class="visually-hidden">Лого виртуальной реальности.</span>
+                  <span class="visually-hidden">Лого моноподы для селфи.</span>
                 </div>
                 Моноподы<br>для селфи
               </a>
@@ -496,7 +485,7 @@
         </div>
 
         <address class="footer-telephone-address">
-          <a class="footer-telephone-address-phone" href="tel:+78128121212">Тел.: +7(812)812-12-12</a>
+          <a class="footer-telephone-address-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </address>
         <div class="academy-logo">
           <a class="academy-logo-link" href="https://htmlacademy.ru/">
@@ -545,7 +534,7 @@
                     <path d="M14 7h-2v2h2V7Zm0 4h-2v8h2v-8Z" />
                   </svg>
                 </button>
-                <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+                <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям <br>к провозу багажа.</span>
               </span>
               <div class="modal-quantity-counter">
                 <button class="modal-quantity-button" type="button">-</button>
